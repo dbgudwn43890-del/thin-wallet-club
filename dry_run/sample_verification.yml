@@ -1,0 +1,85 @@
+schema_version: "1.0"
+dry_run: true
+mock_data_notice: "This file contains mock verification results only. No external verification was performed."
+official_source_url: "https://example.com/sample-source"
+items:
+  - id: "DRY001"
+    linked_sample_candidate_id: "SAMPLE_FREE_CULTURE_EVENT"
+    slug: "sample_free_culture_event"
+    title: "[MOCK] SAMPLE_FREE_CULTURE_EVENT"
+    result: pass
+    verified_at: "2099-01-02"
+    verified_info:
+      source_name: "MOCK_OFFICIAL_SOURCE"
+      source_url: "https://example.com/sample-source"
+      source_tier: 1
+      target: "MOCK_TARGET_CONDITION"
+      region: "MOCK_REGION"
+      period_start: "2099-01-01"
+      period_end: "2099-01-31"
+      deadline: "2099-01-20"
+      cost: "MOCK_FREE"
+      how_to_apply: "MOCK_APPLICATION_METHOD"
+      cautions:
+        - "Mock caution only."
+    usable_sentences:
+      - "[MOCK] This candidate passed dry run verification."
+    caution_notes: []
+    rejection_reason: null
+    todo_remaining: []
+    next_action: "Dry run only: send to curation simulation."
+
+  - id: "DRY002"
+    linked_sample_candidate_id: "SAMPLE_YOUTH_BENEFIT"
+    slug: "sample_youth_benefit"
+    title: "[MOCK] SAMPLE_YOUTH_BENEFIT"
+    result: caution
+    verified_at: "2099-01-02"
+    verified_info:
+      source_name: "MOCK_OFFICIAL_SOURCE"
+      source_url: "https://example.com/sample-source"
+      source_tier: 1
+      target: "MOCK_TARGET_CONDITION_WITH_AMBIGUITY"
+      region: "MOCK_REGION"
+      period_start: "2099-02-01"
+      period_end: "2099-02-28"
+      deadline: "2099-02-15"
+      cost: "MOCK_SUPPORT_VALUE"
+      how_to_apply: "MOCK_APPLICATION_METHOD"
+      cautions:
+        - "Mock ambiguity remains for dry run review."
+    usable_sentences:
+      - "[MOCK] This candidate requires caution in dry run verification."
+    caution_notes:
+      - "Mock caution: eligibility condition needs human review."
+    rejection_reason: null
+    todo_remaining:
+      - "Mock TODO: confirm ambiguous condition during dry run."
+    next_action: "Dry run only: send to curation simulation with caution."
+
+  - id: "DRY003"
+    linked_sample_candidate_id: "SAMPLE_BRAND_PROGRAM"
+    slug: "sample_brand_program"
+    title: "[MOCK] SAMPLE_BRAND_PROGRAM"
+    result: fail
+    verified_at: "2099-01-02"
+    verified_info:
+      source_name: "MOCK_OFFICIAL_SOURCE"
+      source_url: "https://example.com/sample-source"
+      source_tier: 1
+      target: "MOCK_TARGET_CONDITION"
+      region: "MOCK_REGION"
+      period_start: "2099-03-01"
+      period_end: "2099-03-31"
+      deadline: "2099-03-10"
+      cost: "MOCK_COST_UNCLEAR"
+      how_to_apply: "MOCK_APPLICATION_METHOD_UNCLEAR"
+      cautions:
+        - "Mock failure reason only."
+    usable_sentences: []
+    caution_notes: []
+    rejection_reason: "MOCK_FAIL: required details are intentionally incomplete for dry run."
+    todo_remaining:
+      - "Mock TODO: unresolved cost condition."
+      - "Mock TODO: unresolved application method."
+    next_action: "Dry run only: route to rejected simulation."

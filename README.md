@@ -136,6 +136,15 @@ python scripts/validate_all.py
 
 ---
 
+## Manual Pipeline Dry Run
+
+실제 콘텐츠 제작 전에는 샘플 데이터로 candidate -> verification -> curation 흐름을 dry run할 수 있다.
+샘플은 `dry_run/`에만 두며, `data/`, `reviews/`, `drafts/`, `outputs/` production 폴더는 계속 비워둔다.
+
+절차는 `docs/manual_pipeline_dry_run.md`를 참고한다.
+
+---
+
 ## 첫 콘텐츠 제작은 아직 시작하지 않는다
 
 현재 저장소의 목적은 콘텐츠를 빠르게 만드는 것이 아니라, 반복 가능한 생산 시스템을 안정적으로 세우는 것이다.

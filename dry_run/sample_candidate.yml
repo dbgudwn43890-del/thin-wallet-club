@@ -1,0 +1,151 @@
+schema_version: "1.0"
+dry_run: true
+mock_data_notice: "This file contains mock candidates only. It is not production data."
+official_source_url: "https://example.com/sample-source"
+items:
+  - id: null
+    sample_candidate_id: "SAMPLE_FREE_CULTURE_EVENT"
+    slug: "sample_free_culture_event"
+    title: "[MOCK] SAMPLE_FREE_CULTURE_EVENT"
+    category: culture
+    status: idea
+    region: "MOCK_REGION"
+    target:
+      age_min: 19
+      age_max: 34
+      residency: "MOCK_RESIDENCY_CONDITION"
+      enrollment: "MOCK_NOT_REQUIRED"
+      employment: "MOCK_NOT_REQUIRED"
+      income: "MOCK_NOT_REQUIRED"
+      notes: "Mock target only. Not a real audience condition."
+    period:
+      start: "2099-01-01"
+      end: "2099-01-31"
+      is_ongoing: false
+      deadline: "2099-01-20"
+    cost:
+      is_free: true
+      amount: 0
+      notes: "Mock free condition. Not verified."
+    source:
+      name: "MOCK_OFFICIAL_SOURCE"
+      url: "https://example.com/sample-source"
+      tier: 1
+      verified_at: "TODO"
+    scores:
+      target_fit: null
+      region_fit: null
+      savings_value: null
+      sensibility: null
+      timeliness: null
+      save_rate: null
+      share_rate: null
+      source_trust: null
+      production_ease: null
+      total: null
+    decision: null
+    hook_candidates:
+      - "[MOCK] sample hook only"
+    risks:
+      - "Mock data must not be used for content production."
+    notes: "Dry run candidate for testing candidate intake only."
+    created_at: "2099-01-01"
+    updated_at: "2099-01-01"
+
+  - id: null
+    sample_candidate_id: "SAMPLE_YOUTH_BENEFIT"
+    slug: "sample_youth_benefit"
+    title: "[MOCK] SAMPLE_YOUTH_BENEFIT"
+    category: policy
+    status: pre_selected
+    region: "MOCK_REGION"
+    target:
+      age_min: 19
+      age_max: 34
+      residency: "MOCK_RESIDENCY_CONDITION"
+      enrollment: "MOCK_OPTIONAL"
+      employment: "MOCK_OPTIONAL"
+      income: "MOCK_INCOME_CONDITION"
+      notes: "Mock policy target only. Not a real benefit."
+    period:
+      start: "2099-02-01"
+      end: "2099-02-28"
+      is_ongoing: false
+      deadline: "2099-02-15"
+    cost:
+      is_free: true
+      amount: 0
+      notes: "Mock benefit. No real money or support exists."
+    source:
+      name: "MOCK_OFFICIAL_SOURCE"
+      url: "https://example.com/sample-source"
+      tier: 1
+      verified_at: "TODO"
+    scores:
+      target_fit: null
+      region_fit: null
+      savings_value: null
+      sensibility: null
+      timeliness: null
+      save_rate: null
+      share_rate: null
+      source_trust: null
+      production_ease: null
+      total: null
+    decision: null
+    hook_candidates:
+      - "[MOCK] sample benefit hook only"
+    risks:
+      - "Mock benefit must not be represented as real policy."
+    notes: "Dry run candidate for testing pre_selected flow."
+    created_at: "2099-01-01"
+    updated_at: "2099-01-01"
+
+  - id: null
+    sample_candidate_id: "SAMPLE_BRAND_PROGRAM"
+    slug: "sample_brand_program"
+    title: "[MOCK] SAMPLE_BRAND_PROGRAM"
+    category: brand
+    status: idea
+    region: "MOCK_REGION"
+    target:
+      age_min: 19
+      age_max: 34
+      residency: "MOCK_NOT_REQUIRED"
+      enrollment: "MOCK_NOT_REQUIRED"
+      employment: "MOCK_NOT_REQUIRED"
+      income: "MOCK_NOT_REQUIRED"
+      notes: "Mock brand program target only. Not a real program."
+    period:
+      start: "2099-03-01"
+      end: "2099-03-31"
+      is_ongoing: false
+      deadline: "2099-03-10"
+    cost:
+      is_free: false
+      amount: 10000
+      notes: "Mock price only. Not a real fee."
+    source:
+      name: "MOCK_OFFICIAL_SOURCE"
+      url: "https://example.com/sample-source"
+      tier: 1
+      verified_at: "TODO"
+    scores:
+      target_fit: null
+      region_fit: null
+      savings_value: null
+      sensibility: null
+      timeliness: null
+      save_rate: null
+      share_rate: null
+      source_trust: null
+      production_ease: null
+      total: null
+    decision: null
+    hook_candidates:
+      - "[MOCK] sample brand hook only"
+    risks:
+      - "Mock brand program must not be treated as a real collaboration."
+    notes: "Dry run candidate for testing brand category intake."
+    created_at: "2099-01-01"
+    updated_at: "2099-01-01"
