@@ -1,0 +1,285 @@
+schema_version: "1.0"
+content_id: "001_free_seoul_exhibitions"
+status: designed
+prompt_written_at: "2026-06-24"
+source_files:
+  script: "drafts/scripts/001_free_seoul_exhibitions_script.yml"
+  brief: "drafts/briefs/001_free_seoul_exhibitions_brief.yml"
+  curated: "data/verified/001_free_seoul_exhibitions_curated.yml"
+  design_system: "brand/design_system.md"
+  voice_and_tone: "brand/voice_and_tone.md"
+  forbidden_rules: "brand/forbidden_rules.md"
+production_boundary:
+  design_prompt_only: true
+  image_created: false
+  caption_created: false
+  review_created: false
+  output_created: false
+  upload_copy_confirmed: false
+
+format: "Instagram carousel"
+aspect_ratio: "1080x1350"
+card_count: 8
+
+design_keywords:
+  - editorial
+  - magazine
+  - minimal
+  - warm
+  - urban
+  - curated
+  - typography_first
+  - soft_contrast
+  - information_hierarchy
+
+overall_mood:
+  summary: "서울 무료 전시 5개를 담백한 매거진 편집면처럼 보여준다."
+  direction:
+    - "정보는 명확하게, 분위기는 타이포그래피와 여백으로 만든다."
+    - "공공기관 홍보물처럼 보이지 않게 원색, 과한 장식, 안내문식 박스를 피한다."
+    - "전시 포스터나 작품 이미지를 직접 베끼지 않고, 텍스트와 추상적 구조만으로 작동하게 만든다."
+    - "브랜드명은 마지막 장 하단 중심으로 작게 다루고, 카드 문구처럼 과하게 노출하지 않는다."
+
+typography_principles:
+  - "한 장 안에서 headline, body, note의 3단계 위계를 유지한다."
+  - "headline은 짧고 크게, body_copy는 2~3줄 안에서 읽히게 배치한다."
+  - "날짜, 무료, 장소 같은 정보는 작은 정보 블록으로 분리한다."
+  - "커버는 '서울 무료 전시 5'를 가장 큰 정보로 두고, 보조 문구는 작게 둔다."
+  - "감도를 만들기 위해 새로운 감성 카피를 추가하지 않는다."
+
+layout_principles:
+  - "1080x1350px 세로형 캐러셀 기준."
+  - "Slide 1은 잡지 표지형 커버."
+  - "Slide 2는 리스트의 맥락을 여백 있게 정리하는 인트로 카드."
+  - "Slide 3~7은 전시별 한 장, 하나의 메시지 원칙."
+  - "Slide 8은 CTA, 출처, 확인일, 방문 전 확인 안내를 하단 정보 구조로 정리."
+  - "모든 정보 카드에는 확인일 또는 출처 정보가 누락되지 않게 한다."
+  - "카드마다 같은 그리드 안에서 제목 위치, 정보 블록 위치, 하단 note 위치를 안정적으로 반복한다."
+
+color_principles:
+  - "배경은 크림, 오프화이트, 웜 그레이 계열을 기본으로 한다."
+  - "텍스트는 순수 검정보다 다크 그레이를 우선한다."
+  - "포인트 컬러는 1~2개만 사용하고, 공공기관 원색 파랑/빨강을 피한다."
+  - "전시별 분위기는 색면, 선, 블록, 질감의 미세한 차이로만 구분한다."
+  - "그라데이션은 사용하지 않거나 매우 절제한다."
+
+do_not_do:
+  forbidden_copy:
+    - "무료인데 꽤 괜찮아"
+    - "얇은지갑클럽 저장용 리스트"
+    - "감성 무료 전시"
+    - "요즘 핫한"
+    - "안 가면 손해"
+    - "무조건 가야 함"
+    - "MZ 취향"
+    - "힙한"
+    - "모르면 손해"
+  forbidden_tone:
+    - "쿨해 보이려는 말투"
+    - "브랜드가 자기 감도를 과하게 의식하는 말투"
+    - "정보보다 분위기를 앞세우는 말투"
+    - "내부 기획어를 독자-facing 문구처럼 쓰는 방식"
+    - "공공기관 홍보문 같은 말투"
+    - "과장된 추천어"
+  forbidden_visuals:
+    - "전시 포스터나 작품 이미지 직접 복제"
+    - "공식 이미지 없이 권리 불명확한 작품 컷 사용"
+    - "밈 스티커와 과한 이모지"
+    - "복잡한 배경 패턴"
+    - "공공기관 원색 파랑/빨강"
+    - "브랜드명 과다 반복"
+    - "한 장에 본문 5줄 초과"
+
+slide_prompts:
+  - slide_number: 1
+    slide_role: "Hook"
+    headline: "서울 무료 전시 5"
+    body_copy:
+      - "지금 볼 수 있는 전시만."
+      - "기간, 장소, 무료 여부 확인."
+      - "방문 전 운영시간 체크."
+    small_note: "확인일: 2026.06.23"
+    design_intent: "명확한 정보형 커버. 무료 전시 5개라는 핵심을 한눈에 보이게 한다."
+    layout_direction: "상단에 작은 카테고리 라벨, 중앙에 대형 headline, 하단에 확인일을 작게 배치한다."
+    typography_direction: "'서울', '무료', '5'의 위계를 크게 잡되 과장된 장식은 넣지 않는다."
+    visual_motif: "넓은 여백과 큰 숫자 5, 얇은 구분선."
+    information_hierarchy:
+      primary: "서울 무료 전시 5"
+      secondary: "지금 볼 수 있는 전시만."
+      tertiary: "확인일: 2026.06.23"
+    color_direction: "오프화이트 배경, 다크 그레이 텍스트, 절제된 포인트 컬러 1개."
+    spacing_direction: "상하 여백을 크게 두고 중앙 정렬 또는 좌측 정렬 중 하나로 일관되게 구성."
+    caution_for_designer: "커버에 브랜드 감도 과시 문구나 내부 기획어를 넣지 않는다."
+    image_use_guidance: "공식 이미지 없이도 완성되는 타이포그래피 중심 커버로 제작."
+
+  - slide_number: 2
+    slide_role: "Context"
+    headline: "돈 안 쓰는 취향"
+    body_copy:
+      - "전부 무료."
+      - "서울 안에서 볼 수 있고,"
+      - "분위기는 제각각."
+    small_note: "방문 전 예약/운영시간 확인"
+    design_intent: "리스트의 기준을 설명하고 저장할 이유를 짧게 보여준다."
+    layout_direction: "5개 전시를 작은 리스트나 좌표형 구조로 암시하되 실제 지도처럼 복잡하게 만들지 않는다."
+    typography_direction: "headline은 크게, body는 짧은 줄바꿈으로 리듬을 만든다."
+    visual_motif: "작은 번호 1~5, 얇은 라인, 미니 리스트 블록."
+    information_hierarchy:
+      primary: "돈 안 쓰는 취향"
+      secondary: "전부 무료 / 서울 / 분위기 다양"
+      tertiary: "방문 전 예약/운영시간 확인"
+    color_direction: "커버와 같은 톤을 유지하고 번호만 은은한 포인트 컬러로 처리."
+    spacing_direction: "리스트 요소 사이 간격을 넉넉하게 두어 정보가 빽빽해 보이지 않게 한다."
+    caution_for_designer: "내부 운영어인 저장용 리스트 표현을 쓰지 않는다."
+    image_use_guidance: "사진 대신 번호, 라인, 정보 블록으로 구성."
+
+  - slide_number: 3
+    slide_role: "Selected Item"
+    headline: "산과 색면"
+    body_copy:
+      - "한국 추상미술 거장"
+      - "유영국을 크게 보는 전시."
+      - "서소문본관에서 10월까지."
+    small_note: "기간 2026.05.19~10.25 | 무료 | 서울 중구"
+    design_intent: "대표 전시의 규모감과 색면 감각을 텍스트 중심으로 전달한다."
+    layout_direction: "상단에 전시 키워드, 중앙에 body, 하단에 기간/무료/지역 정보 블록을 둔다."
+    typography_direction: "headline은 묵직하게, body는 호흡이 보이는 3줄로 둔다."
+    visual_motif: "색면을 연상시키는 단순한 직사각형 블록."
+    information_hierarchy:
+      primary: "산과 색면"
+      secondary: "한국 추상미술 거장 / 유영국"
+      tertiary: "기간, 무료, 지역"
+    color_direction: "차분한 그린 또는 딥 블루 계열 포인트를 아주 제한적으로 사용."
+    spacing_direction: "색면 블록과 텍스트가 겹치지 않게 충분한 안전 여백 확보."
+    caution_for_designer: "유영국 작품 이미지를 직접 재현하거나 베끼지 않는다."
+    image_use_guidance: "작품 이미지 사용 금지. 추상적 색면 모티프만 사용."
+
+  - slide_number: 4
+    slide_role: "Selected Item"
+    headline: "소리로 보는 전시"
+    body_copy:
+      - "소리, 기술, 감각이"
+      - "겹쳐지는 설치 전시."
+      - "북서울미술관에서 길게 열려."
+    small_note: "기간 2026.06.11~2027.05.16 | 무료 | 서울 노원구"
+    design_intent: "사운드와 공간감이 있는 전시라는 인상을 차분하게 전달한다."
+    layout_direction: "텍스트 주변에 얇은 선과 리듬감 있는 간격을 배치한다."
+    typography_direction: "headline의 자간은 넉넉하게, body는 일정한 행간으로 읽기 쉽게 둔다."
+    visual_motif: "파형을 직접 그리기보다 간격이 다른 얇은 선들의 반복."
+    information_hierarchy:
+      primary: "소리로 보는 전시"
+      secondary: "소리 / 기술 / 감각"
+      tertiary: "기간, 무료, 지역"
+    color_direction: "웜 그레이 배경에 muted blue-gray 또는 charcoal 포인트."
+    spacing_direction: "선 모티프와 정보 블록 사이를 넓혀 소리의 여백감을 만든다."
+    caution_for_designer: "과한 음표 아이콘, 장식적 파형, 기술 홍보물 느낌을 피한다."
+    image_use_guidance: "사진 없이 선과 타이포그래피로 공간감을 만든다."
+
+  - slide_number: 5
+    slide_role: "Selected Item"
+    headline: "새 공간의 미디어"
+    body_copy:
+      - "서서울미술관 개관 특별전."
+      - "미디어 소장품을 보면서"
+      - "새 공간까지 같이 체크."
+    small_note: "기간 2026.05.14~07.26 | 무료 | 서울 금천구"
+    design_intent: "새 미술관과 미디어 소장품전이라는 탐색 가치를 보여준다."
+    layout_direction: "스크린 또는 창을 연상시키는 직사각형 프레임 안팎에 정보를 배치한다."
+    typography_direction: "headline은 선명하게, 긴 전시명은 본문에 넣지 않고 정보 부담을 낮춘다."
+    visual_motif: "겹친 직사각형 프레임, 스크린 비율의 박스."
+    information_hierarchy:
+      primary: "새 공간의 미디어"
+      secondary: "서서울미술관 개관 특별전"
+      tertiary: "기간, 무료, 지역"
+    color_direction: "오프화이트 배경에 미세한 실버 그레이, 포인트는 차분한 라임 또는 민트 계열."
+    spacing_direction: "프레임 안에 텍스트를 꽉 채우지 말고 바깥 여백을 살린다."
+    caution_for_designer: "정식 전시명의 특수문자 표현을 임의로 바꾸어 카드에 크게 넣지 않는다."
+    image_use_guidance: "미디어 작품 컷 대신 추상 프레임으로 표현."
+
+  - slide_number: 6
+    slide_role: "Selected Item"
+    headline: "포란은 곧 종료"
+    body_copy:
+      - "서울미디어시티비엔날레"
+      - "사전프로그램."
+      - "7월 5일까지, 이번 주 체크."
+    small_note: "기간 2026.05.20~07.05 | 무료 | 서울 관악구"
+    design_intent: "종료 임박 정보를 과장 없이 분명하게 보이게 한다."
+    layout_direction: "작은 '곧 종료' 라벨을 두고, 날짜 정보를 다른 카드보다 조금 더 눈에 띄게 배치한다."
+    typography_direction: "마감 날짜는 굵게 처리하되 경고문처럼 보이지 않게 한다."
+    visual_motif: "작은 라벨, 얇은 캘린더형 구분선, 제한된 포인트 박스."
+    information_hierarchy:
+      primary: "포란은 곧 종료"
+      secondary: "7월 5일까지"
+      tertiary: "무료, 서울 관악구"
+    color_direction: "기본 팔레트 위에 muted red-brown 또는 terracotta를 아주 작게 사용."
+    spacing_direction: "긴급 라벨 주변 여백을 확보해 과한 광고 배너처럼 보이지 않게 한다."
+    caution_for_designer: "안 가면 손해, 무조건 같은 과장된 긴급 표현을 추가하지 않는다."
+    image_use_guidance: "비엔날레 이미지나 포스터를 복제하지 않고 날짜 중심 정보 구조로 표현."
+
+  - slide_number: 7
+    slide_role: "Selected Item"
+    headline: "더 하이브리드"
+    body_copy:
+      - "한불수교 140주년."
+      - "전통과 근대 공예가"
+      - "섞이는 장면을 본다."
+    small_note: "기간 2026.04.28~07.26 | 무료 | 서울 종로구"
+    design_intent: "공예와 혼성적 감각을 차분한 질감과 구조로 표현한다."
+    layout_direction: "두 개의 재질감 있는 면이 겹치는 구조로 혼성의 느낌을 만든다."
+    typography_direction: "headline은 간결하게, body는 세 줄 모두 같은 폭감으로 정돈한다."
+    visual_motif: "종이 질감 블록, 겹친 레이어, 얇은 프레임."
+    information_hierarchy:
+      primary: "더 하이브리드"
+      secondary: "한불수교 140주년 / 공예"
+      tertiary: "기간, 무료, 지역"
+    color_direction: "크림 배경에 muted beige-gray, charcoal, 아주 약한 warm accent."
+    spacing_direction: "질감 블록은 배경처럼 낮은 대비로 두고 텍스트 가독성을 우선한다."
+    caution_for_designer: "무료 근거 분리 리스크가 있으므로 무료 표기는 정보 블록 수준으로만 차분히 둔다."
+    image_use_guidance: "공예품 사진이나 전시 이미지를 직접 따라 그리지 않는다."
+
+  - slide_number: 8
+    slide_role: "CTA + Source"
+    headline: "저장해두기"
+    body_copy:
+      - "마음 가는 곳은 저장."
+      - "친구한테 보내도 좋고."
+      - "방문 전 예약/운영시간 확인."
+    small_note: "출처: 서울시립미술관, 서울공예박물관 | 확인일: 2026.06.23 | 얇은지갑클럽"
+    design_intent: "저장/공유 CTA와 출처, 확인일, 방문 전 확인 안내를 분명하게 마무리한다."
+    layout_direction: "CTA를 중앙에 두고, 출처/확인일/브랜드명은 하단 작은 푸터로 고정한다."
+    typography_direction: "CTA는 중간 크기로, 출처와 확인일은 작지만 읽히는 크기로 둔다."
+    visual_motif: "작은 체크리스트 블록, 얇은 하단 라인, 푸터 정보."
+    information_hierarchy:
+      primary: "저장해두기"
+      secondary: "방문 전 예약/운영시간 확인"
+      tertiary: "출처, 확인일, 얇은지갑클럽"
+    color_direction: "전체 팔레트와 동일하게 마무리하되, 푸터 정보는 다크 그레이 70% 수준."
+    spacing_direction: "CTA와 푸터 사이 충분한 간격을 두어 출처가 광고 문구처럼 보이지 않게 한다."
+    caution_for_designer: "최종 업로드 문구나 캡션처럼 확장하지 않는다."
+    image_use_guidance: "사진 없이 텍스트와 정보 블록만으로 마감."
+
+production_notes:
+  - "이 파일은 디자인 프롬프트이며 실제 이미지를 생성하지 않는다."
+  - "원고의 headline, body_copy, small_note를 임의로 수정하지 않는다."
+  - "출처, 확인일, 방문 전 예약/운영시간 확인 문구를 누락하지 않는다."
+  - "공식 이미지가 확보되지 않아도 완성 가능한 타이포그래피 중심 방향이다."
+  - "작품, 포스터, 전시 키비주얼을 직접 복제하거나 유사하게 재현하지 않는다."
+  - "Slide 6의 종료 임박 표현은 발행일 지연 시 사람 검수에서 다시 확인한다."
+  - "Slide 7의 무료 근거는 전시 상세 + 관람안내 조합이므로 최종 검수에서 다시 확인한다."
+
+human_review_required:
+  - "커버가 '서울 무료 전시 5' 중심의 명확한 정보형 문구로 보이는지 확인"
+  - "금지 문구와 금지 톤이 카드 문구 또는 디자인 지시에서 새로 생성되지 않았는지 확인"
+  - "브랜드명이 마지막 장 하단 중심으로만 절제되어 있는지 확인"
+  - "각 슬라이드의 출처/확인일/기간/무료/지역 정보가 원고와 일치하는지 확인"
+  - "Slide 6 《포란》의 종료 임박 표현이 실제 발행일 기준으로 유효한지 확인"
+  - "Slide 7 《더 하이브리드》의 무료 근거 분리 리스크가 최종 검수에서 확인됐는지 확인"
+  - "작품 이미지나 포스터를 베끼지 않는 타이포그래피 중심 디자인으로 구현됐는지 확인"
+
+next_step:
+  command: "review-before-upload"
+  allowed_after:
+    - "디자인 프롬프트가 원고 문구를 변경하지 않았는지 확인"
+    - "사람 검수에서 금지 톤/문구, 출처, 확인일, 일정 리스크 확인"
+    - "실제 이미지 생성 전 권리 불명확한 이미지 사용 금지 재확인"
