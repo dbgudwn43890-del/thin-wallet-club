@@ -127,6 +127,15 @@ python scripts/validate_all.py
 
 ---
 
+## Framework Decision
+
+현재는 CrewAI, AutoGen, LangGraph 같은 멀티에이전트 프레임워크를 도입하지 않는다.
+자세한 판단 기준은 `docs/framework_decision.md`를 참고한다.
+
+첫 콘텐츠 수동 파이프라인을 실행한 뒤 실제 병목을 기록하고 다시 평가한다.
+
+---
+
 ## 첫 콘텐츠 제작은 아직 시작하지 않는다
 
 현재 저장소의 목적은 콘텐츠를 빠르게 만드는 것이 아니라, 반복 가능한 생산 시스템을 안정적으로 세우는 것이다.

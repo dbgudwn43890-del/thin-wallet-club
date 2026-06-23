@@ -135,6 +135,7 @@ data/archive/{id}_{slug}_archive.yml
 | 브랜드 기준 | `brand/voice_and_tone.md` |
 | 디자인 기준 | `brand/design_system.md` |
 | 금지 규칙 | `brand/forbidden_rules.md` |
+| 프레임워크 도입 판단 | `docs/framework_decision.md` |
 
 ---
 
