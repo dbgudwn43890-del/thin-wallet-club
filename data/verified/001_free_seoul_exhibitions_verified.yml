@@ -1,0 +1,277 @@
+schema_version: "1.0"
+content_id: "001_free_seoul_exhibitions"
+source_candidate_file: "data/candidates/001_free_seoul_exhibitions_candidates.yml"
+verification_step: "verify-candidate"
+baseline_date: "2026-06-23"
+source_checked_at: "2026-06-23"
+summary:
+  total_checked: 12
+  pass: 6
+  caution: 6
+  fail: 0
+  final_selection_status: not_selected
+  production_status: not_started
+notes:
+  - "이번 파일은 검증 결과만 기록한다. 큐레이션, 최종 선정, 원고, 캡션, 디자인 프롬프트는 생성하지 않았다."
+  - "서울공예박물관 후보는 전시 상세 페이지와 관람안내의 무료 문구를 함께 대조했다."
+
+items:
+  - candidate_id: "sema_yoo_youngkuk_mountain_within"
+    title: "2026년 한국 근대 거장전 《유영국: 산은 내 안에 있다》"
+    venue: "서울시립미술관 서소문본관 1층 전시실"
+    verification_status: pass
+    official_source_name: "서울시립미술관"
+    official_source_url: "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1529410"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.05.19~2026.10.25"
+      price: "무료"
+      is_free: true
+      venue: "서울시립미술관 서소문본관 1층 전시실"
+      address_or_area: "서울 중구"
+      reservation_required: "전시 상세에 전시 사전 예약 링크가 있으나, 필수 여부는 별도 재확인 필요"
+      opening_hours_note: "평일 화-목 10:00-20:00, 금 10:00-21:00, 토/일/공휴일 하절기 10:00-19:00, 동절기 10:00-18:00. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "오디오 가이드는 현장 유료 대여 문구가 있어 무료 전시와 부가 서비스 비용을 분리 표기해야 함."
+      - "예약 필수 여부는 Curator/Editor 단계 전 재확인 필요."
+    reason_for_status: "공식 상세 페이지에서 전시명, 장소, 기간, 관람료 무료, 운영시간/휴관일을 확인했고 기준일 현재 진행 중이며 마감 리드타임이 충분함."
+    usable_for_cardnews: true
+    verifier_notes: "무료 회고전 후보로 사용 가능. 단, 전시 사전 예약 링크의 의미는 카드뉴스 제작 전 재확인."
+
+  - candidate_id: "sema_kwon_byungjun_inside_my_heart"
+    title: "《권병준: 내 마음속에 너는》"
+    venue: "서울시립 북서울미술관 B1 전시실 5, 6"
+    verification_status: pass
+    official_source_name: "서울시립미술관"
+    official_source_url: "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1538201"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.06.11~2027.05.16"
+      price: "무료"
+      is_free: true
+      venue: "서울시립 북서울미술관 B1 전시실 5, 6"
+      address_or_area: "서울 노원구"
+      reservation_required: "전시 상세에 전시 사전 예약 링크가 있으나, 필수 여부는 별도 재확인 필요"
+      opening_hours_note: "북서울미술관 평일 화-목 10:00-20:00, 금 10:00-21:00, 토/일/공휴일 하절기 10:00-19:00, 동절기 10:00-18:00. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "전시 체험 방식과 예약 필수 여부는 제작 전 재확인 필요."
+    reason_for_status: "공식 상세 페이지에서 전시명, 장소, 기간, 관람료 무료가 확인되고 2027년까지 진행되어 유효 기간 리스크가 낮음."
+    usable_for_cardnews: true
+    verifier_notes: "장기 운영 전시로 카드뉴스 후보 사용 가능."
+
+  - candidate_id: "sema_west_seoul_transparent_youth_machine"
+    title: "서울시립 서서울미술관 개관 특별 미디어 소장품전 《서서울의 투명한 |청소년| 기계》"
+    venue: "서울시립 서서울미술관 1층/B1 전시실"
+    verification_status: pass
+    official_source_name: "서울시립미술관"
+    official_source_url: "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1528398"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.05.14~2026.07.26"
+      price: "무료"
+      is_free: true
+      venue: "서울시립 서서울미술관 1층 제3전시실, B1 제2전시실, B1 제1전시실 등"
+      address_or_area: "서울 금천구"
+      reservation_required: "전시 상세에 전시 사전 예약 링크가 있으나, 필수 여부는 별도 재확인 필요"
+      opening_hours_note: "서서울미술관 평일 화-금 10:00-20:00, 토/일/공휴일 하절기 10:00-19:00, 동절기 10:00-18:00. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "전시 제목에 특수문자와 청소년 단어가 포함되어 카드뉴스 표현 시 오해가 없도록 원제 유지 필요."
+      - "2026-07-26 종료라 발행 일정이 늦어질 경우 재확인 필요."
+    reason_for_status: "공식 상세 페이지에서 전시명, 장소, 기간, 관람료 무료가 확인되며 기준일 기준 진행 중."
+    usable_for_cardnews: true
+    verifier_notes: "서서울미술관 개관 특별전이라는 공간성 때문에 후보 가치가 있음."
+
+  - candidate_id: "sema_nanji_20th_origin_of_love"
+    title: "난지미술창작스튜디오 20주년 기념전 《사랑의 기원》"
+    venue: "서울시립미술관 서소문본관 2층, 3층 전시실"
+    verification_status: pass
+    official_source_name: "서울시립미술관"
+    official_source_url: "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1523485"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.04.30~2026.09.06"
+      price: "무료"
+      is_free: true
+      venue: "서울시립미술관 서소문본관 2층, 3층 전시실"
+      address_or_area: "서울 중구"
+      reservation_required: "전시 상세에 전시 사전 예약 링크가 있으나, 필수 여부는 별도 재확인 필요"
+      opening_hours_note: "서소문본관 평일 화-목 10:00-20:00, 금 10:00-21:00, 토/일/공휴일 하절기 10:00-19:00, 동절기 10:00-18:00. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "난지미술창작스튜디오 관련 전시지만 장소는 서소문본관이므로 혼동 금지."
+    reason_for_status: "공식 상세 페이지에서 전시명, 장소, 기간, 관람료 무료가 확인되고 기준일 기준 진행 중."
+    usable_for_cardnews: true
+    verifier_notes: "장소명 혼동만 피하면 카드뉴스 후보 사용 가능."
+
+  - candidate_id: "sema_gana_technology_underlayer"
+    title: "가나아트컬렉션 《기술의 저변: 경계에 선 장면들》"
+    venue: "서울시립미술관 서소문본관 2층 가나아트컬렉션 전시실/상설 전시실"
+    verification_status: pass
+    official_source_name: "서울시립미술관"
+    official_source_url: "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1509709"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.04.16~2026.11.22"
+      price: "무료"
+      is_free: true
+      venue: "서울시립미술관 서소문본관 2층 가나아트컬렉션 전시실/상설 전시실"
+      address_or_area: "서울 중구"
+      reservation_required: "전시 상세에 전시 사전 예약 링크가 있으나, 필수 여부는 별도 재확인 필요"
+      opening_hours_note: "서소문본관 평일 화-목 10:00-20:00, 금 10:00-21:00, 토/일/공휴일 하절기 10:00-19:00, 동절기 10:00-18:00. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "상설/기획상설 성격을 카드뉴스에서 정확히 표기해야 함."
+    reason_for_status: "공식 상세 페이지에서 전시명, 장소, 기간, 관람료 무료가 확인되고 종료일이 충분히 남아 있음."
+    usable_for_cardnews: true
+    verifier_notes: "기술/시각문화 키워드로 카드뉴스 후보 사용 가능."
+
+  - candidate_id: "sema_interlude_for_body_somokjangsemi"
+    title: "유휴공간 프로젝트 전시 《몸을 위한 간주곡 ― 소목장세미》"
+    venue: "서울시립 북서울미술관 1층 라운지 1"
+    verification_status: pass
+    official_source_name: "서울시립미술관"
+    official_source_url: "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1512457"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.04.02~2027.05.30"
+      price: "무료"
+      is_free: true
+      venue: "서울시립 북서울미술관 1층 라운지 1"
+      address_or_area: "서울 노원구"
+      reservation_required: "전시 상세에 전시 사전 예약 링크가 있으나, 필수 여부는 별도 재확인 필요"
+      opening_hours_note: "북서울미술관 평일 화-목 10:00-20:00, 금 10:00-21:00, 토/일/공휴일 하절기 10:00-19:00, 동절기 10:00-18:00. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "연계 워크숍은 별도 조건이 있을 수 있어 전시 무료 정보와 분리해야 함."
+    reason_for_status: "공식 상세 페이지에서 전시명, 장소, 기간, 관람료 무료가 확인되고 장기 운영 중."
+    usable_for_cardnews: true
+    verifier_notes: "장기 무료 전시 후보로 사용 가능."
+
+  - candidate_id: "sema_pre_smb_foran"
+    title: "제14회 서울미디어시티비엔날레 사전프로그램 《포란》"
+    venue: "서울시립 남서울미술관 1층/2층/야외"
+    verification_status: caution
+    official_source_name: "서울시립미술관"
+    official_source_url: "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1533269"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.05.20~2026.07.05"
+      price: "무료"
+      is_free: true
+      venue: "서울시립 남서울미술관 1층, 2층, 야외"
+      address_or_area: "서울 관악구"
+      reservation_required: "전시 상세에 전시 웹사이트 방문/전시 사전 예약 링크가 있으나, 필수 여부는 별도 재확인 필요"
+      opening_hours_note: "남서울미술관 운영시간/휴관일은 전시 상세 내 방문 정보 기준으로 재확인 필요. 일반적으로 월요일/1월 1일 휴관 계열."
+    risk_notes:
+      - "2026-07-05 종료로 기준일 2026-06-23에서 약 12일 남아 발행 리드타임 리스크가 있음."
+      - "야외/퍼포먼스 등 구성 요소가 있어 관람 가능 범위와 예약 여부 재확인 필요."
+    reason_for_status: "공식 상세 페이지에서 핵심 정보와 무료 여부는 확인되지만 종료일이 가까워 caution 처리."
+    usable_for_cardnews: true
+    verifier_notes: "빠르게 큐레이션하지 않으면 발행 시점에 마감 임박 또는 종료될 수 있음."
+
+  - candidate_id: "sema_writing_art"
+    title: "《글짓, 쓰는 예술》"
+    venue: "서울시립 북서울미술관 1층/2층 전시실"
+    verification_status: caution
+    official_source_name: "서울시립미술관"
+    official_source_url: "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1521429"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.04.23~2026.07.12"
+      price: "무료"
+      is_free: true
+      venue: "서울시립 북서울미술관 1층 전시실 1, 2 / 2층 전시실 3, 4 등"
+      address_or_area: "서울 노원구"
+      reservation_required: "전시 상세에 전시 사전 예약 링크가 있으나, 필수 여부는 별도 재확인 필요"
+      opening_hours_note: "북서울미술관 평일 화-목 10:00-20:00, 금 10:00-21:00, 토/일/공휴일 하절기 10:00-19:00, 동절기 10:00-18:00. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "2026-07-12 종료로 발행 일정이 늦어질 경우 마감 임박 리스크가 있음."
+      - "연계 퍼포먼스 일정은 전시 기간과 별도라 카드뉴스에서 혼동 금지."
+    reason_for_status: "공식 상세 페이지에서 핵심 정보와 무료 여부는 확인되지만 종료일이 비교적 가까워 caution 처리."
+    usable_for_cardnews: true
+    verifier_notes: "주제는 좋으나 발행 시점 재확인 필수."
+
+  - candidate_id: "semoca_kwon_soonyung_donation"
+    title: "색유만개 : 권순형 기증특별전시"
+    venue: "서울공예박물관 전시1동 1층 로비, 안내동 일부"
+    verification_status: caution
+    official_source_name: "서울공예박물관"
+    official_source_url: "https://craftmuseum.seoul.go.kr/exhibit/plan/view/185"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.05.12 ~ 2026.08.02"
+      price: "무료 (서울공예박물관 관람안내 기준, 대관전시 유료 가능)"
+      is_free: true
+      venue: "서울공예박물관 전시1동 1층 로비, 안내동 일부"
+      address_or_area: "서울 종로구"
+      reservation_required: "관람안내 기준 개인 자유관람. 어린이박물관은 별도 사전예약 확인 후 입장."
+      opening_hours_note: "전시실 10:00-18:00, 금요일 21:00까지 야간개관, 입장마감 17:30. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "전시 상세 페이지 자체에는 관람료 필드가 보이지 않고, 무료 여부는 서울공예박물관 관람안내에서 확인됨."
+      - "대관전시 유료 가능 문구가 있어 이 전시가 대관전시가 아닌지 최종 재확인 필요."
+    reason_for_status: "공식 상세에서 전시명/기간/장소는 확인되고 공식 관람안내에서 무료가 확인되지만, 개별 상세에 가격 필드가 없어 caution 처리."
+    usable_for_cardnews: true
+    verifier_notes: "Curator 전 무료 근거를 전시 상세+관람안내로 함께 표기할 것."
+
+  - candidate_id: "semoca_the_hybrid"
+    title: "한불수교 140주년 기념전시 《더 하이브리드》"
+    venue: "서울공예박물관 전시1동 3층"
+    verification_status: caution
+    official_source_name: "서울공예박물관"
+    official_source_url: "https://craftmuseum.seoul.go.kr/exhibit/plan/view/180"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.04.28 ~ 2026.07.26"
+      price: "무료 (서울공예박물관 관람안내 기준, 대관전시 유료 가능)"
+      is_free: true
+      venue: "서울공예박물관 전시1동 3층"
+      address_or_area: "서울 종로구"
+      reservation_required: "관람안내 기준 개인 자유관람. 어린이박물관은 별도 사전예약 확인 후 입장."
+      opening_hours_note: "전시실 10:00-18:00, 금요일 21:00까지 야간개관, 입장마감 17:30. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "전시 상세 페이지 자체에는 관람료 필드가 보이지 않고, 무료 여부는 서울공예박물관 관람안내에서 확인됨."
+      - "2026-07-26 종료라 발행 일정이 늦어질 경우 재확인 필요."
+    reason_for_status: "공식 상세에서 전시명/기간/장소는 확인되고 공식 관람안내에서 무료가 확인되지만, 개별 상세에 가격 필드가 없어 caution 처리."
+    usable_for_cardnews: true
+    verifier_notes: "무료 표기 출처를 관람안내로 별도 기록해야 함."
+
+  - candidate_id: "semoca_andongbyeolgung_layers_of_time"
+    title: "공예협력전시 《안동별궁, 시간의 겹》"
+    venue: "서울공예박물관 전시3동 3층"
+    verification_status: caution
+    official_source_name: "서울공예박물관"
+    official_source_url: "https://craftmuseum.seoul.go.kr/exhibit/plan/view/184"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.04.28 ~ 2027.08.29"
+      price: "무료 (서울공예박물관 관람안내 기준, 대관전시 유료 가능)"
+      is_free: true
+      venue: "서울공예박물관 전시3동 3층"
+      address_or_area: "서울 종로구"
+      reservation_required: "관람안내 기준 개인 자유관람. 어린이박물관은 별도 사전예약 확인 후 입장."
+      opening_hours_note: "전시실 10:00-18:00, 금요일 21:00까지 야간개관, 입장마감 17:30. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "전시 상세 페이지 자체에는 관람료 필드가 보이지 않고, 무료 여부는 서울공예박물관 관람안내에서 확인됨."
+      - "장기 전시라 시의성은 Curator 단계에서 별도 판단 필요."
+    reason_for_status: "공식 상세에서 전시명/기간/장소는 확인되고 공식 관람안내에서 무료가 확인되지만, 개별 상세에 가격 필드가 없어 caution 처리."
+    usable_for_cardnews: true
+    verifier_notes: "장기 전시라 즉시성보다는 공간/코스 가치로 판단 필요."
+
+  - candidate_id: "semoca_craft_companion_showwindow_3"
+    title: "2026 서울공예박물관 X 서울문화재단 공예동행@쇼윈도 #3"
+    venue: "서울공예박물관 전시3동 1층 쇼윈도 갤러리"
+    verification_status: caution
+    official_source_name: "서울공예박물관"
+    official_source_url: "https://craftmuseum.seoul.go.kr/exhibit/plan/view/187"
+    source_checked_at: "2026-06-23"
+    verified_facts:
+      exhibition_period: "2026.06.17 ~ 2026.07.12"
+      price: "무료 (서울공예박물관 관람안내 기준, 대관전시 유료 가능)"
+      is_free: true
+      venue: "서울공예박물관 전시3동 1층 쇼윈도 갤러리"
+      address_or_area: "서울 종로구"
+      reservation_required: "관람안내 기준 개인 자유관람. 어린이박물관은 별도 사전예약 확인 후 입장."
+      opening_hours_note: "전시실 10:00-18:00, 금요일 21:00까지 야간개관, 입장마감 17:30. 매주 월요일, 1월 1일 휴관."
+    risk_notes:
+      - "전시 상세 페이지 자체에는 관람료 필드가 보이지 않고, 무료 여부는 서울공예박물관 관람안내에서 확인됨."
+      - "2026-07-12 종료로 발행 일정이 늦어질 경우 마감 임박 리스크가 큼."
+    reason_for_status: "공식 상세에서 전시명/기간/장소는 확인되고 공식 관람안내에서 무료가 확인되지만, 개별 상세 가격 필드 부재와 종료일 임박 때문에 caution 처리."
+    usable_for_cardnews: true
+    verifier_notes: "빠른 발행이 아니라면 후보에서 제외될 수 있음."

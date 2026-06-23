@@ -1,0 +1,13 @@
+schema_version: "1.0"
+content_id: "001_free_seoul_exhibitions"
+source_candidate_file: "data/candidates/001_free_seoul_exhibitions_candidates.yml"
+verification_step: "verify-candidate"
+baseline_date: "2026-06-23"
+source_checked_at: "2026-06-23"
+summary:
+  total_checked: 12
+  fail: 0
+notes:
+  - "이번 검증 단계에서 공식 출처 접근 실패, 마감 지남, 무료 여부 불일치, 서울/수도권 외 지역 사유로 fail 처리한 후보는 없다."
+  - "주의가 필요한 후보는 data/verified/001_free_seoul_exhibitions_verified.yml 안에 verification_status: caution으로 남겼다."
+items: []
