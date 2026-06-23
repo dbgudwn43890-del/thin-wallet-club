@@ -23,18 +23,18 @@ human_approval_reflected:
   reservation_wording: "원고에서 예약 필수 여부를 단정하지 않고 방문 전 예약/운영시간 확인으로 처리"
 
 title_options:
+  - "무료인데 꽤 괜찮은 서울 전시 5"
   - "서울 무료 전시 5"
-  - "무료인데 괜찮아"
   - "저장할 전시 5"
 
 slides:
   - slide_number: 1
     slide_role: "Hook"
-    headline: "서울 무료 전시 5"
+    headline: "무료인데 꽤 괜찮아"
     body_copy:
-      - "무료인데"
-      - "꽤 괜찮은 곳만 골랐어."
-      - "이번 주말 저장해둘 리스트."
+      - "서울에서 볼 수 있는"
+      - "무료 전시 5개."
+      - "이번 주말용으로 저장."
     small_note: "확인일: 2026.06.23"
     visual_direction_note: "잡지 커버처럼 여백 크게. '무료'와 '5'만 강하게."
     fact_source_note: "전체 후보는 서울시립미술관, 서울공예박물관 공식 출처 기반."
@@ -42,11 +42,11 @@ slides:
 
   - slide_number: 2
     slide_role: "Context"
-    headline: "다 무료야"
+    headline: "돈 안 쓰는 취향"
     body_copy:
+      - "전부 무료."
       - "서울 안에서 볼 수 있고,"
-      - "전시마다 분위기가 달라."
-      - "돈 안 쓰고 취향 넓히기 좋음."
+      - "분위기는 제각각."
     small_note: "방문 전 예약/운영시간 확인"
     visual_direction_note: "5개 전시를 작은 리스트/지도감 있는 배치로 보여주기."
     fact_source_note: "5개 후보 모두 기준일 2026-06-23에 공식 출처 확인."
@@ -54,10 +54,10 @@ slides:
 
   - slide_number: 3
     slide_role: "Selected Item"
-    headline: "유영국 회고전"
+    headline: "산과 색면"
     body_copy:
-      - "한국 추상미술 거장전."
-      - "무료 전시인데 규모감이 있어."
+      - "한국 추상미술 거장"
+      - "유영국을 크게 보는 전시."
       - "서소문본관에서 10월까지."
     small_note: "기간 2026.05.19~10.25 | 무료 | 서울 중구"
     visual_direction_note: "색면/추상 느낌을 타이포 위계로만 암시. 작품 이미지 사용은 별도 권리 확인 전 금지."
@@ -66,11 +66,11 @@ slides:
 
   - slide_number: 4
     slide_role: "Selected Item"
-    headline: "권병준 전시"
+    headline: "소리로 보는 전시"
     body_copy:
-      - "사운드와 설치를 좋아하면 체크."
+      - "소리, 기술, 감각이"
+      - "겹쳐지는 설치 전시."
       - "북서울미술관에서 길게 열려."
-      - "천천히 다녀오기 좋은 후보."
     small_note: "기간 2026.06.11~2027.05.16 | 무료 | 서울 노원구"
     visual_direction_note: "소리/공간감을 선과 여백으로 표현. 과한 아이콘 금지."
     fact_source_note: "출처: 서울시립미술관 공식 전시 상세"
@@ -78,11 +78,11 @@ slides:
 
   - slide_number: 5
     slide_role: "Selected Item"
-    headline: "서서울 미디어"
+    headline: "새 공간의 미디어"
     body_copy:
-      - "새로 열린 서서울미술관."
-      - "미디어 소장품전이라"
-      - "공간 구경까지 같이 가능."
+      - "서서울미술관 개관 특별전."
+      - "미디어 소장품을 보면서"
+      - "새 공간까지 같이 체크."
     small_note: "기간 2026.05.14~07.26 | 무료 | 서울 금천구"
     visual_direction_note: "새 공간 느낌. 미디어/스크린 같은 직사각형 모티프 사용 가능."
     fact_source_note: "출처: 서울시립미술관 공식 전시 상세"
@@ -90,11 +90,11 @@ slides:
 
   - slide_number: 6
     slide_role: "Selected Item"
-    headline: "포란, 곧 종료"
+    headline: "포란은 곧 종료"
     body_copy:
       - "서울미디어시티비엔날레"
       - "사전프로그램."
-      - "7월 5일까지라 이번 주 체크."
+      - "7월 5일까지, 이번 주 체크."
     small_note: "기간 2026.05.20~07.05 | 무료 | 서울 관악구"
     visual_direction_note: "곧 종료 라벨을 작게 강조. 긴급하지만 과장된 경고 톤은 피하기."
     fact_source_note: "출처: 서울시립미술관 공식 전시 상세"
@@ -104,9 +104,9 @@ slides:
     slide_role: "Selected Item"
     headline: "더 하이브리드"
     body_copy:
-      - "안국 쪽 갈 일 있다면."
-      - "전통과 근대 공예를"
-      - "같이 보는 전시."
+      - "한불수교 140주년."
+      - "전통과 근대 공예가"
+      - "섞이는 장면을 본다."
     small_note: "기간 2026.04.28~07.26 | 무료 | 서울 종로구"
     visual_direction_note: "공예/종로 산책 무드. 차분한 질감과 따뜻한 색감."
     fact_source_note: "출처: 서울공예박물관 전시 상세 + 관람안내"
@@ -116,9 +116,9 @@ slides:
     slide_role: "CTA + Source"
     headline: "저장해두기"
     body_copy:
-      - "무료 전시는 일정이 바뀔 수 있어."
-      - "가기 전 예약/운영시간 확인."
-      - "출처는 공식 페이지 기준."
+      - "마음 가는 곳은 저장."
+      - "친구한테 보내도 좋고."
+      - "방문 전 예약/운영시간 확인."
     small_note: "출처: 서울시립미술관, 서울공예박물관 | 확인일: 2026.06.23 | 얇은지갑클럽"
     visual_direction_note: "CTA 중심. 출처/확인일/브랜드명은 하단에 작게 고정."
     fact_source_note: "전체 출처: 서울시립미술관 공식 전시 상세, 서울공예박물관 전시 상세 및 관람안내."
@@ -135,6 +135,7 @@ fact_check_notes:
     - "예약 필수 여부는 단정하지 않고 모든 관련 슬라이드/CTA에서 방문 전 예약/운영시간 확인으로 처리."
     - "《더 하이브리드》 무료 근거는 서울공예박물관 전시 상세 + 관람안내 조합임."
     - "《포란》은 실제 발행일이 늦어지면 종료 임박 문구를 수정하거나 후보 제외 필요."
+    - "최종 제목 방향은 '무료인데 꽤 괜찮은 서울 전시 5'로 승인되었으나, 슬라이드 커버 headline은 디자인 단계에서 길이와 가독성을 함께 확인해야 함."
 
 risk_notes:
   - "SeMA 후보가 5개 중 4개라 기관 편중이 있으나 사람 승인 완료."
@@ -143,11 +144,11 @@ risk_notes:
   - "이 파일은 슬라이드별 원고 초안이며 캡션/디자인 프롬프트/업로드 문구가 아님."
 
 human_check_required:
-  - "최종 제목 후보 1개 선택"
   - "각 슬라이드 headline 길이와 톤 확인"
   - "《포란》 실제 발행일 기준 사용 가능 여부 확인"
   - "《더 하이브리드》 무료 근거 표기 방식 확인"
   - "방문 전 예약/운영시간 확인 문구가 충분히 명확한지 확인"
+  - "커버에서 최종 제목 전체를 쓸지, 짧은 headline과 보조 문구로 나눌지 확인"
 
 quality_check:
   slide_count: 8
