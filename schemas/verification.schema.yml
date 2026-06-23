@@ -1,0 +1,89 @@
+# Verification Schema
+# 사용 위치: data/verified/{id}_{slug}.yml / data/rejected/{slug}.yml
+# 담당: Verifier 에이전트
+
+schema_version: "1.0"
+description: "Verifier가 출력하는 검증 결과 데이터 스키마."
+
+fields:
+
+  id:
+    type: string
+    required: true
+    example: "001"
+
+  slug:
+    type: string
+    required: true
+    example: "culture_example"
+
+  title:
+    type: string
+    required: true
+
+  result:
+    type: string
+    enum: [pass, caution, fail]
+    required: true
+    description: |
+      pass: 카드뉴스 사용 가능
+      caution: 사용 가능하나 주의 문구 필요
+      fail: 사용 불가 — rejected로 처리
+
+  verified_at:
+    type: string
+    format: "YYYY-MM-DD"
+    required: true
+    description: "공식 출처 직접 확인한 날짜"
+
+  verified_info:
+    type: object
+    required: true
+    description: "검증된 핵심 정보 6개"
+    properties:
+      source_name: {type: string, example: "예시: 공식 출처명"}
+      source_url: {type: string, format: "URL"}
+      source_tier: {type: integer, enum: [1, 2]}
+      target: {type: string, example: "예시: 대상 조건"}
+      region: {type: string}
+      period_start: {type: string, format: "YYYY-MM-DD"}
+      period_end: {type: string, format: "YYYY-MM-DD"}
+      deadline: {type: string, format: "YYYY-MM-DD"}
+      cost: {type: string, example: "무료"}
+      how_to_apply: {type: string, example: "예시: 공식 홈페이지 신청"}
+      cautions: {type: array, items: {type: string}}
+
+  usable_sentences:
+    type: array
+    items: {type: string}
+    description: "카드뉴스에 그대로 사용할 수 있는 검증된 문장"
+    example:
+      - "예시: 대상 조건을 충족하면 신청 가능하다."
+      - "예시: 신청은 공식 홈페이지에서 할 수 있다."
+
+  caution_notes:
+    type: array
+    items: {type: string}
+    description: "result가 caution일 때 카드뉴스에 포함할 주의 문구"
+
+  rejection_reason:
+    type: string
+    description: "result가 fail일 때 폐기 사유"
+    enum_notes:
+      - "공식 출처 없음"
+      - "마감 지남"
+      - "무료 조건 사실과 다름"
+      - "서울/수도권 대상 아님"
+      - "대상 조건 불명확"
+      - "비용이 기준 초과"
+      - "광고성 정보 미표시"
+
+  todo_remaining:
+    type: array
+    items: {type: string}
+    description: "검증 후 여전히 확인이 필요한 항목 (pass라도 남을 수 있음)"
+
+  next_action:
+    type: string
+    description: "검증 결과에 따른 다음 단계"
+    example: "Curator에게 전달 → selected 판단"

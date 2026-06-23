@@ -1,0 +1,134 @@
+# Candidate Schema
+# 사용 위치: data/candidates/{category}_candidates.yml
+# 상태: idea ~ pre_selected
+
+schema_version: "1.0"
+description: "콘텐츠 후보 데이터 스키마. 검증 전 아이디어 단계에서 사용."
+
+fields:
+
+  id:
+    type: string
+    format: "3자리 제로패딩 (001, 002 ...) — selected 단계에서 부여"
+    required: false
+    example: "001"
+
+  slug:
+    type: string
+    format: "영소문자 + underscore, 40자 이내"
+    required: true
+    example: "culture_example"
+
+  title:
+    type: string
+    description: "한국어 제목 (아이디어 단계 가제)"
+    required: true
+    example: "예시: 저렴한 문화생활 묶음"
+
+  category:
+    type: string
+    enum:
+      - culture       # 문화생활/전시/공연/팝업
+      - policy        # 청년정책/지원금
+      - brand         # 브랜드 프로그램
+      - student       # 대학생 혜택
+      - essay         # 에세이/조언
+    required: true
+
+  status:
+    type: string
+    enum: [idea, pre_selected, verifying, verified, rejected, selected,
+           briefed, scripted, designed, in_review, approved, published, archived]
+    required: true
+    default: "idea"
+
+  region:
+    type: string
+    description: "대상 지역"
+    required: true
+    example: "서울 전체 / 서울 종로구 / 서울·경기 / 전국"
+
+  target:
+    type: object
+    required: true
+    properties:
+      age_min: {type: integer, example: 19}
+      age_max: {type: integer, example: 34}
+      residency: {type: string, example: "서울 거주자"}
+      enrollment: {type: string, example: "대학(원)생"}
+      employment: {type: string, example: "취업자"}
+      income: {type: string, example: "중위소득 150% 이하"}
+      notes: {type: string, example: "예시: 조건 없음"}
+
+  period:
+    type: object
+    required: true
+    properties:
+      start: {type: string, format: "YYYY-MM-DD", example: "2026-07-01"}
+      end: {type: string, format: "YYYY-MM-DD", example: "2026-08-31"}
+      is_ongoing: {type: boolean, example: false}
+      deadline: {type: string, format: "YYYY-MM-DD", example: "2026-07-31"}
+
+  cost:
+    type: object
+    required: true
+    properties:
+      is_free: {type: boolean}
+      amount: {type: integer, description: "원 단위. 무료면 0", example: 0}
+      notes: {type: string, example: "무료 / 1인 5000원 / 최대 월 10만 원 지원"}
+
+  source:
+    type: object
+    required: true
+    properties:
+      name: {type: string, example: "예시: 공식 기관명"}
+      url: {type: string, format: "URL", example: "https://example.org"}
+      tier: {type: integer, enum: [1, 2, 3], example: 1}
+      verified_at: {type: string, format: "YYYY-MM-DD", example: "TODO"}
+
+  scores:
+    type: object
+    description: "Curator가 채우는 점수 (각 0~5)"
+    properties:
+      target_fit: {type: integer}       # 타겟 적합도
+      region_fit: {type: integer}       # 지역 적합도
+      savings_value: {type: integer}    # 실질 절약 효과
+      sensibility: {type: integer}      # 감각성
+      timeliness: {type: integer}       # 시의성
+      save_rate: {type: integer}        # 저장 가능성
+      share_rate: {type: integer}       # 공유 가능성
+      source_trust: {type: integer}     # 출처 신뢰도
+      production_ease: {type: integer}  # 제작 난이도 (높을수록 쉬움)
+      total: {type: integer, description: "합산 /45"}
+
+  decision:
+    type: string
+    enum: [produce, hold, reject]
+    description: "Curator 결정"
+
+  hook_candidates:
+    type: array
+    items: {type: string}
+    description: "카드뉴스 첫 장 훅 후보 문장들"
+    example:
+      - "예시: 저렴한 문화생활 5"
+      - "예시: 이번 주말 확인할 선택지"
+
+  risks:
+    type: array
+    items: {type: string}
+    description: "제작 시 주의사항 또는 잠재 오류 가능성"
+
+  notes:
+    type: string
+    description: "기타 메모"
+
+  created_at:
+    type: string
+    format: "YYYY-MM-DD"
+    required: true
+
+  updated_at:
+    type: string
+    format: "YYYY-MM-DD"
+    required: true

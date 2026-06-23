@@ -1,0 +1,82 @@
+# Script Schema
+# 사용 위치: drafts/scripts/{id}_{slug}_script.md
+# 담당: Editor 에이전트
+# 입력: drafts/briefs/{id}_{slug}.md
+
+schema_version: "1.0"
+description: "카드뉴스 8장 원고 스키마. 브리프를 기반으로 Editor가 작성."
+
+sections:
+
+  header:
+    fields:
+      - content_id: ""
+      - slug: ""
+      - title: ""
+      - category: ""
+      - status: "scripted"
+      - source_name: ""
+      - source_url: ""
+      - verified_at: "YYYY-MM-DD"
+      - script_written_at: "YYYY-MM-DD"
+      - todo_count: "0 (원고 완성 시 반드시 0)"
+
+  selected_title:
+    description: "브리프의 제목 후보 5개 중 최종 선택"
+    type: string
+
+  slides:
+    description: "8장 슬라이드 원고"
+    count: 8
+    per_slide_fields:
+      - slide_number: "1~8"
+      - role: "Hook / Context / Why now / Target / Benefit / How-to / Caution / CTA"
+      - heading:
+          type: string
+          max_length: 15
+      - body:
+          type: string
+          max_lines: 4
+          rules:
+            - "확인되지 않은 정보 포함 금지"
+            - "TODO 0개"
+      - footer:
+          type: string
+          format: "확인일: YYYY.MM.DD | 출처: {출처명}"
+          required_for_slides: [2, 3, 4, 5, 6, 7]
+      - cta:
+          description: "Slide 8 전용"
+          type: string
+      - brand_name:
+          description: "Slide 8 전용. 항상 '얇은지갑클럽'"
+          type: string
+
+  caption:
+    description: "인스타그램 캡션"
+    fields:
+      - first_line:
+          description: "핵심 정보 or 훅. 캡션에서 가장 중요한 한 줄."
+          max_length: 60
+      - body:
+          description: "조건 요약, 핵심 정보 2~3개"
+      - cta:
+          description: "저장 / 팔로우 유도"
+      - source_line:
+          format: "출처: {출처명} | 확인일: YYYY.MM.DD"
+      - hashtags:
+          type: array
+          max_count: 15
+          required:
+            - "#얇은지갑클럽"
+
+  quality_check:
+    description: "Editor 자체 체크리스트 (원고 제출 전 확인)"
+    checklist:
+      - "슬라이드 8장 완성"
+      - "각 슬라이드 제목 15자 이내"
+      - "각 슬라이드 본문 4줄 이내"
+      - "TODO 항목 0개"
+      - "금지 표현 없음"
+      - "출처/확인일 모든 정보 카드에 표기"
+      - "Slide 8에 CTA + 출처 + 브랜드명 포함"
+      - "캡션 해시태그 15개 이내"

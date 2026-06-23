@@ -1,0 +1,94 @@
+# Performance Schema
+# 사용 위치: data/performance/{id}_{slug}_performance.yml
+# 담당: Growth Analyst 에이전트
+# 수집 시점: 발행 후 D+3, D+7
+
+schema_version: "1.0"
+description: "발행된 콘텐츠의 성과 데이터 스키마."
+
+fields:
+
+  content_id:
+    type: string
+    required: true
+
+  slug:
+    type: string
+    required: true
+
+  title:
+    type: string
+    required: true
+
+  category:
+    type: string
+    required: true
+
+  published_at:
+    type: string
+    format: "YYYY-MM-DD"
+    required: true
+
+  instagram_url:
+    type: string
+    format: "URL"
+
+  metrics_d3:
+    description: "발행 후 D+3 성과"
+    fields:
+      - collected_at: "YYYY-MM-DD"
+      - reach: {type: integer}
+      - saves: {type: integer}
+      - shares: {type: integer}
+      - comments: {type: integer}
+      - profile_visits: {type: integer}
+      - follows: {type: integer}
+      - save_rate: {type: float, description: "saves / reach * 100 (%)"}
+      - first_slide_exit_rate: {type: float, description: "추정값 (있으면)"}
+
+  metrics_d7:
+    description: "발행 후 D+7 성과 (선택)"
+    fields:
+      - collected_at: "YYYY-MM-DD"
+      - reach: {type: integer}
+      - saves: {type: integer}
+      - shares: {type: integer}
+      - comments: {type: integer}
+      - save_rate: {type: float}
+
+  analysis:
+    description: "Growth Analyst 분석"
+    fields:
+      - what_worked:
+          type: string
+          description: "잘 된 이유"
+      - what_didnt:
+          type: string
+          description: "부족한 점"
+      - comment_patterns:
+          type: array
+          items: {type: string}
+          description: "댓글에서 보인 반응 패턴"
+      - format_verdict:
+          type: string
+          enum: [repeat, improve, drop]
+          description: "이 포맷 반복/개선/버릴 것"
+
+  next_recommendations:
+    type: array
+    items: {type: string}
+    description: "다음 콘텐츠 제안 (최대 5개)"
+    max_count: 5
+
+  performance_grade:
+    type: string
+    enum: [A, B, C]
+    description: |
+      A: 저장률 10% 이상 (성공)
+      B: 저장률 5~10% (보통)
+      C: 저장률 5% 미만 (부진)
+
+  archived_at:
+    type: string
+    format: "YYYY-MM-DD"
+    description: "data/archive/ 이동 날짜"

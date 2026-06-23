@@ -1,0 +1,95 @@
+# Design Prompt Schema
+# 사용 위치: drafts/design_prompts/{id}_{slug}_design_prompt.md
+# 담당: Design Director 에이전트 (magazine-design 스킬 사용)
+# 입력: drafts/scripts/{id}_{slug}_script.md
+
+schema_version: "1.0"
+description: "Claude Design에 입력하는 디자인 프롬프트 스키마."
+
+sections:
+
+  header:
+    fields:
+      - content_id: ""
+      - slug: ""
+      - title: ""
+      - status: "designed"
+      - script_source: "drafts/scripts/{id}_{slug}_script.md"
+      - prompt_written_at: "YYYY-MM-DD"
+
+  brand_context:
+    description: "Claude Design이 참조할 브랜드 정보"
+    fields:
+      - brand_name: "얇은지갑클럽"
+      - brand_description: "서울/수도권 20대를 위한 감각 있는 생활 정보 매거진"
+      - format: "인스타그램 캐러셀 1080x1350px 8장"
+      - mood_keywords:
+          type: array
+          required:
+            - "editorial"
+            - "magazine"
+            - "minimal"
+            - "warm"
+          optional:
+            - "urban"
+            - "curated"
+            - "clean"
+            - "soft contrast"
+
+  layout_rules:
+    description: "레이아웃 원칙"
+    rules:
+      - "여백을 넉넉하게"
+      - "한 장 = 하나의 메시지"
+      - "Slide 1은 잡지 표지 스타일"
+      - "Slide 2~7은 정보 카드"
+      - "Slide 8은 CTA + 출처"
+      - "타이포그래피 위계 3단계 이상"
+      - "배경: 크림/오프화이트 계열"
+      - "포인트 컬러: 계절/주제에 따라 변주"
+
+  emphasis_elements:
+    description: "강조가 필요한 정보 (원고에서 추출)"
+    type: array
+    example:
+      - "마감일"
+      - "혜택 금액"
+      - "대상 조건"
+
+  forbidden_elements:
+    type: array
+    fixed:
+      - "공공기관 원색 (파랑/빨강)"
+      - "밈 스티커"
+      - "과한 이모지"
+      - "복잡한 배경 패턴"
+      - "무지개 그라데이션"
+      - "정보 5줄 초과 (한 장 기준)"
+
+  fixed_elements:
+    description: "모든 정보 카드에 반드시 포함되어야 하는 요소"
+    type: array
+    items:
+      - "확인일: YYYY.MM.DD"
+      - "출처: {출처명}"
+    slide_8_only:
+      - "얇은지갑클럽 (브랜드명)"
+      - "저장 CTA 문구"
+
+  slide_contents:
+    description: "슬라이드별 텍스트 (원고에서 그대로 복사)"
+    count: 8
+    per_slide:
+      - slide_number: ""
+      - role: ""
+      - heading: ""
+      - body: ""
+      - footer: ""
+
+  output_format:
+    description: "Claude Design 출력 요청 형식"
+    fields:
+      - size: "1080x1350px"
+      - file_format: "PNG"
+      - slides: 8
+      - naming: "{id}_{slug}_slide_{n}.png"

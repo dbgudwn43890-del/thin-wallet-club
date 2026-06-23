@@ -1,0 +1,89 @@
+# Brief Schema
+# 사용 위치: drafts/briefs/{id}_{slug}.md
+# 담당: Editor 에이전트 (cardnews-planning 스킬 사용)
+# 입력: data/verified/{id}_{slug}.yml
+
+schema_version: "1.0"
+description: "카드뉴스 브리프 구조. Editor가 원고 작성 전 작성하는 설계도."
+
+# 브리프는 Markdown 파일이므로 아래는 섹션 정의다.
+
+sections:
+
+  header:
+    fields:
+      - content_id: "001"
+      - slug: "culture_example"
+      - title: "콘텐츠 제목 (가제)"
+      - category: "문화생활"
+      - status: "briefed"
+      - created_at: "YYYY-MM-DD"
+      - verified_source: "data/verified/001_culture_example.yml"
+
+  title_candidates:
+    description: "제목 후보 5개. 구체적 숫자 or 조건 포함."
+    count: 5
+    rules:
+      - "15자 이내"
+      - "구체적 숫자/금액 포함 권장"
+      - "대상을 명시하면 저장률 높아짐"
+
+  target_and_promise:
+    fields:
+      - who: "누구에게"
+      - why_now: "왜 지금"
+      - core_promise: "독자가 얻는 것 (1문장)"
+
+  slide_outline:
+    description: "8장 슬라이드 구성 설계"
+    slides:
+      - slide: 1
+        role: "Hook"
+        key_message: ""
+        visual_direction: ""
+      - slide: 2
+        role: "Context"
+        key_message: ""
+      - slide: 3
+        role: "Why now"
+        key_message: ""
+      - slide: 4
+        role: "Target"
+        key_message: ""
+      - slide: 5
+        role: "Benefit"
+        key_message: ""
+      - slide: 6
+        role: "How-to"
+        key_message: ""
+      - slide: 7
+        role: "Caution"
+        key_message: ""
+      - slide: 8
+        role: "CTA + Source"
+        key_message: ""
+        fixed_elements: ["출처", "확인일", "브랜드명", "저장CTA"]
+
+  fact_list:
+    description: "필요한 팩트 목록. 확인된 것과 TODO 분리."
+    confirmed: []
+    todo: []
+
+  source_info:
+    fields:
+      - source_name: ""
+      - source_url: ""
+      - verified_at: "YYYY-MM-DD"
+
+  risks:
+    description: "오해 가능성, 조건 복잡성, 변경 가능성 등"
+
+  caption_direction:
+    description: "캡션 작성 방향 메모"
+
+  design_direction:
+    description: "시각 무드, 강조 요소, 특이사항"
+    fields:
+      - mood: ""
+      - emphasis_elements: []
+      - forbidden_elements: []

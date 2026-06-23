@@ -1,0 +1,48 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local
+.venv/
+*.key
+*.pem
+
+# Temporary
+tmp/
+temp/
+.cache/
+node_modules/
+__pycache__/
+*.pyc
+
+# Generated image exports (발행 완료 이미지는 로컬 보관)
+outputs/published/*.zip
+outputs/published/*.png
+outputs/published/*.jpg
+outputs/published/*.jpeg
+outputs/published/*.pdf
+outputs/reviewed/*.png
+outputs/reviewed/*.jpg
+outputs/reviewed/*.jpeg
+
+# Keep empty folder structure
+!outputs/published/.gitkeep
+!outputs/reviewed/.gitkeep
+!drafts/briefs/.gitkeep
+!drafts/scripts/.gitkeep
+!drafts/design_prompts/.gitkeep
+!drafts/captions/.gitkeep
+!data/candidates/.gitkeep
+!data/verified/.gitkeep
+!data/rejected/.gitkeep
+!data/archive/.gitkeep
+!data/performance/.gitkeep
+!reviews/human_review_queue/.gitkeep
+!reviews/approved/.gitkeep
+!reviews/revision_needed/.gitkeep

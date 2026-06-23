@@ -1,0 +1,76 @@
+university_sources:
+  # 대학 공식 채널
+  - name: 서울대학교 공지사항
+    url: https://www.snu.ac.kr/notice
+    category: university_notice
+    priority: medium
+    notes: 교내 혜택, 프로그램 공지. 재학생 한정 많음.
+
+  - name: 연세대학교 공지사항
+    url: https://www.yonsei.ac.kr
+    category: university_notice
+    priority: medium
+    notes: 교내 프로그램, 외부 연계 혜택.
+
+  - name: 고려대학교 공지사항
+    url: https://www.korea.ac.kr
+    category: university_notice
+    priority: medium
+    notes: 교내 프로그램, 외부 연계 혜택.
+
+  # 대학생 혜택 플랫폼
+  - name: 대학내일
+    url: https://univ20.com
+    category: student_culture
+    priority: high
+    notes: 20대/대학생 트렌드, 혜택 정보. 콘텐츠 출처 교차 확인 필수.
+
+  - name: 링커리어
+    url: https://linkareer.com
+    category: student_career
+    priority: medium
+    notes: 대외활동, 인턴, 공모전 정보.
+
+  - name: 씽유
+    url: https://www.thinkyou.co.kr
+    category: student_activity
+    priority: low
+    notes: 대외활동, 공모전 정보.
+
+  # 소프트웨어/도구 학생 혜택
+  - name: GitHub Education
+    url: https://education.github.com
+    category: student_software
+    priority: high
+    notes: 대학 이메일로 무료 개발 툴 패키지. GitHub Pro 포함.
+
+  - name: Notion for Education
+    url: https://www.notion.so/product/notion-for-education
+    category: student_software
+    priority: high
+    notes: 대학 이메일로 무료 플러스 플랜.
+
+  - name: Figma Education
+    url: https://www.figma.com/education
+    category: student_software
+    priority: high
+    notes: 대학 이메일로 무료 전문가 플랜.
+
+  - name: Adobe Creative Cloud for Students
+    url: https://www.adobe.com/kr/creativecloud/buy/students.html
+    category: student_software
+    priority: medium
+    notes: 학생 할인 (60% 수준). 유료지만 할인폭 큼. 가격 수시 변경.
+
+  # 문화 학생 할인
+  - name: 문화가 있는 날
+    url: https://www.culture.go.kr/culturemonth
+    category: student_culture
+    priority: high
+    notes: 매달 마지막 수요일. 학생 무료/할인 혜택. 공식 확인 필수.
+
+  - name: 청소년/대학생 할인 통합
+    url: https://www.ktmf.or.kr
+    category: student_discount
+    priority: medium
+    notes: 청소년 티켓 할인 정보 통합.

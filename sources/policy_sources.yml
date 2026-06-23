@@ -1,0 +1,70 @@
+policy_sources:
+  # 국가 청년정책
+  - name: 온통청년
+    url: https://www.youthcenter.go.kr
+    category: national_youth_policy
+    priority: high
+    notes: 국가 청년정책 통합 포털. 지원금, 일자리, 주거, 복지 포함.
+
+  - name: 정부24
+    url: https://www.gov.kr
+    category: government_benefits
+    priority: high
+    notes: 정부 서비스 통합 포털. 각종 지원금 신청 가능.
+
+  - name: 보조금24
+    url: https://www.gov.kr/portal/rcvfvrSvc/main
+    category: subsidies
+    priority: high
+    notes: 개인 맞춤형 보조금 조회 서비스.
+
+  - name: 문화체육관광부
+    url: https://www.mcst.go.kr
+    category: culture_policy
+    priority: high
+    notes: 문화 관련 청년 지원 정책 발표처.
+
+  # 서울시
+  - name: 서울청년몽땅정보통
+    url: https://youth.seoul.go.kr
+    category: seoul_youth_policy
+    priority: high
+    notes: 서울시 청년 정책 통합 정보. 서울 거주/활동 대상.
+
+  - name: 서울시 공식 홈페이지
+    url: https://www.seoul.go.kr
+    category: seoul_policy
+    priority: high
+    notes: 서울시 정책 발표 공식 채널.
+
+  - name: 서울문화포털
+    url: https://culture.seoul.go.kr
+    category: seoul_culture_policy
+    priority: high
+    notes: 서울시 문화 혜택, 공연 할인, 문화패스 관련.
+
+  # 경기/인천
+  - name: 경기도 청년포털
+    url: https://youth.gg.go.kr
+    category: gyeonggi_youth_policy
+    priority: medium
+    notes: 경기도 청년 지원 정책. 경기 거주자 한정.
+
+  - name: 인천 청년포털
+    url: https://youth.incheon.go.kr
+    category: incheon_youth_policy
+    priority: medium
+    notes: 인천시 청년 지원 정책. 인천 거주자 한정.
+
+  # 교육/취업
+  - name: 고용노동부 워크넷
+    url: https://www.work.go.kr
+    category: employment
+    priority: medium
+    notes: 취업 지원, 직업훈련, 청년 고용 프로그램.
+
+  - name: K-디지털 플랫폼
+    url: https://www.k-digital.kr
+    category: education
+    priority: low
+    notes: 디지털 기술 교육 지원 사업.
