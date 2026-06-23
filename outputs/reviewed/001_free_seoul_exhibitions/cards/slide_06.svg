@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">포란은 곧 종료</title>
+  <desc id="desc">여섯 번째 카드. 포란 전시의 종료 임박 정보를 차분하게 표시한다.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f5f0e8; }
+      .ink { fill: #282621; }
+      .muted { fill: #706b64; }
+      .accent { fill: #9a684e; }
+      .soft { fill: #ead9cf; }
+      .line { stroke: #282621; stroke-width: 2; opacity: .18; }
+      text { font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; letter-spacing: 0; }
+      .kicker { font-size: 24px; font-weight: 600; }
+      .tag { font-size: 25px; font-weight: 700; }
+      .headline { font-size: 78px; font-weight: 800; }
+      .body { font-size: 42px; font-weight: 600; }
+      .date { font-size: 56px; font-weight: 800; }
+      .note { font-size: 25px; font-weight: 500; }
+    </style>
+  </defs>
+  <rect class="bg" width="1080" height="1350"/>
+  <text x="92" y="132" class="kicker muted">04 / selected</text>
+  <rect x="92" y="202" width="168" height="56" class="soft"/>
+  <text x="116" y="239" class="tag accent">곧 종료</text>
+  <text x="92" y="362" class="headline ink">포란은</text>
+  <text x="92" y="456" class="headline ink">곧 종료</text>
+  <line x1="92" y1="528" x2="988" y2="528" class="line"/>
+  <text x="92" y="652" class="body ink">서울미디어시티비엔날레</text>
+  <text x="92" y="724" class="body ink">사전프로그램.</text>
+  <text x="92" y="840" class="date accent">7월 5일까지</text>
+  <text x="92" y="908" class="body ink">이번 주 체크.</text>
+  <g transform="translate(92 1030)">
+    <rect x="0" y="0" width="896" height="132" fill="#ffffff" opacity=".35"/>
+    <text x="36" y="55" class="note ink">기간 2026.05.20~07.05</text>
+    <text x="36" y="100" class="note muted">무료 | 서울 관악구</text>
+  </g>
+  <text x="92" y="1244" class="note muted">출처: 서울시립미술관 공식 전시 상세</text>
+</svg>

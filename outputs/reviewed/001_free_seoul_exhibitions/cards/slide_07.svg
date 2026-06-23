@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">더 하이브리드</title>
+  <desc id="desc">일곱 번째 카드. 더 하이브리드 전시를 겹친 질감 블록으로 표현한다.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f5efe5; }
+      .ink { fill: #292621; }
+      .muted { fill: #716b62; }
+      .paper { fill: #ded4c3; }
+      .paper2 { fill: #cfc6b6; }
+      .line { stroke: #292621; stroke-width: 2; opacity: .18; }
+      .accent { fill: #725f4e; }
+      text { font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; letter-spacing: 0; }
+      .kicker { font-size: 24px; font-weight: 600; }
+      .headline { font-size: 80px; font-weight: 800; }
+      .body { font-size: 42px; font-weight: 600; }
+      .note { font-size: 25px; font-weight: 500; }
+    </style>
+  </defs>
+  <rect class="bg" width="1080" height="1350"/>
+  <rect x="634" y="142" width="254" height="426" class="paper"/>
+  <rect x="704" y="228" width="254" height="426" class="paper2" opacity=".86"/>
+  <rect x="660" y="184" width="254" height="426" fill="none" stroke="#725f4e" stroke-width="3" opacity=".35"/>
+  <text x="92" y="132" class="kicker muted">05 / selected</text>
+  <text x="92" y="350" class="headline ink">더</text>
+  <text x="92" y="446" class="headline ink">하이브리드</text>
+  <line x1="92" y1="520" x2="552" y2="520" class="line"/>
+  <text x="92" y="650" class="body ink">한불수교 140주년.</text>
+  <text x="92" y="722" class="body ink">전통과 근대 공예가</text>
+  <text x="92" y="794" class="body ink">섞이는 장면을 본다.</text>
+  <g transform="translate(92 970)">
+    <rect x="0" y="0" width="896" height="150" fill="#ffffff" opacity=".34"/>
+    <text x="36" y="58" class="note ink">기간 2026.04.28~07.26</text>
+    <text x="36" y="104" class="note muted">무료 | 서울 종로구</text>
+  </g>
+  <text x="92" y="1218" class="note muted">출처: 서울공예박물관 전시 상세 + 관람안내</text>
+</svg>

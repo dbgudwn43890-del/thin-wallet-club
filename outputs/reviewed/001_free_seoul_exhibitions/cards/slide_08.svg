@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">저장해두기</title>
+  <desc id="desc">여덟 번째 카드. 저장 안내, 공식 출처, 확인일, 방문 전 확인 사항을 정리한다.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f5f0e8; }
+      .ink { fill: #282621; }
+      .muted { fill: #706b64; }
+      .accent { fill: #637063; }
+      .soft { fill: #e5ded2; }
+      .line { stroke: #282621; stroke-width: 2; opacity: .18; }
+      text { font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; letter-spacing: 0; }
+      .kicker { font-size: 24px; font-weight: 600; }
+      .headline { font-size: 86px; font-weight: 800; }
+      .body { font-size: 40px; font-weight: 600; }
+      .small { font-size: 26px; font-weight: 500; }
+      .foot { font-size: 23px; font-weight: 500; }
+    </style>
+  </defs>
+  <rect class="bg" width="1080" height="1350"/>
+  <text x="92" y="132" class="kicker muted">before you go</text>
+  <text x="92" y="330" class="headline ink">저장해두기</text>
+  <line x1="92" y1="402" x2="988" y2="402" class="line"/>
+  <text x="92" y="526" class="body ink">마음 가는 곳은 저장.</text>
+  <text x="92" y="598" class="body ink">친구한테 보내도 좋고.</text>
+  <text x="92" y="670" class="body ink">방문 전 예약/운영시간 확인.</text>
+  <g transform="translate(92 804)">
+    <rect x="0" y="0" width="896" height="276" class="soft"/>
+    <circle cx="46" cy="62" r="7" class="accent"/>
+    <text x="76" y="72" class="small ink">공식 출처 기준으로 정리</text>
+    <circle cx="46" cy="126" r="7" class="accent"/>
+    <text x="76" y="136" class="small ink">확인일: 2026.06.23</text>
+    <circle cx="46" cy="190" r="7" class="accent"/>
+    <text x="76" y="200" class="small ink">포란은 발행일 기준 일정 재확인</text>
+  </g>
+  <text x="92" y="1168" class="foot muted">출처: 서울시립미술관, 서울공예박물관</text>
+  <text x="92" y="1210" class="foot muted">방문 전 예약/운영시간 확인</text>
+  <text x="92" y="1252" class="foot muted">얇은지갑클럽</text>
+</svg>

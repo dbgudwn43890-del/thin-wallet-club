@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc">
+  <title id="title">새 공간의 미디어</title>
+  <desc id="desc">다섯 번째 카드. 서서울미술관 개관 특별전을 프레임 구조로 표현한다.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f5f1e9; }
+      .ink { fill: #282621; }
+      .muted { fill: #706b64; }
+      .frame { fill: none; stroke: #7b8466; stroke-width: 4; opacity: .5; }
+      .soft { fill: #e3e7d9; }
+      .line { stroke: #282621; stroke-width: 2; opacity: .18; }
+      text { font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; letter-spacing: 0; }
+      .kicker { font-size: 24px; font-weight: 600; }
+      .headline { font-size: 78px; font-weight: 800; }
+      .body { font-size: 42px; font-weight: 600; }
+      .note { font-size: 25px; font-weight: 500; }
+    </style>
+  </defs>
+  <rect class="bg" width="1080" height="1350"/>
+  <rect x="640" y="150" width="290" height="390" class="soft"/>
+  <rect x="596" y="202" width="290" height="390" class="frame"/>
+  <rect x="704" y="274" width="220" height="300" class="frame"/>
+  <text x="92" y="132" class="kicker muted">03 / selected</text>
+  <text x="92" y="324" class="headline ink">새 공간의</text>
+  <text x="92" y="418" class="headline ink">미디어</text>
+  <line x1="92" y1="486" x2="526" y2="486" class="line"/>
+  <text x="92" y="618" class="body ink">서서울미술관 개관 특별전.</text>
+  <text x="92" y="690" class="body ink">미디어 소장품을 보면서</text>
+  <text x="92" y="762" class="body ink">새 공간까지 같이 체크.</text>
+  <g transform="translate(92 960)">
+    <rect x="0" y="0" width="896" height="150" fill="#e9e4dc"/>
+    <text x="36" y="58" class="note ink">기간 2026.05.14~07.26</text>
+    <text x="36" y="104" class="note muted">무료 | 서울 금천구</text>
+  </g>
+  <text x="92" y="1218" class="note muted">출처: 서울시립미술관 공식 전시 상세</text>
+</svg>
